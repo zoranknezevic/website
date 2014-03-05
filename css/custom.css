@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Fonts */
+
+@font-face {
+	font-family: 'SkanskaSansProRegular';
+	src: url('http://static.skanska.com/fonts/2.0/skanskasanspro-regular-webfont.eot?') format('eot'), url('http://static.skanska.com/fonts/2.0/skanskasanspro-regular-webfont.woff') format('woff'), url('http://static.skanska.com/fonts/2.0/skanskasanspro-regular-webfont.ttf') format('truetype'), url('http://static.skanska.com/fonts/2.0/skanskasanspro-regular-webfont.svg#webfontY57ncvY5') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SkanskaSansProLight';
+	src: url('http://static.skanska.com/fonts/2.0/skanskasanspro-light-webfont.eot?') format('eot'), url('http://static.skanska.com/fonts/2.0/skanskasanspro-light-webfont.woff') format('woff'), url('http://static.skanska.com/fonts/2.0/skanskasanspro-light-webfont.ttf') format('truetype'), url('http://static.skanska.com/fonts/2.0/skanskasanspro-light-webfont.svg#webfont7MNaramE') format('svg');
+	font-weight: lighter;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SkanskaSansProBold';
+	src: url('http://static.skanska.com/fonts/2.0/skanskasanspro-bold-webfont.eot?') format('eot'), url('http://static.skanska.com/fonts/2.0/skanskasanspro-bold-webfont.woff') format('woff'), url('http://static.skanska.com/fonts/2.0/skanskasanspro-bold-webfont.ttf') format('truetype'), url('http://static.skanska.com/fonts/2.0/skanskasanspro-bold-webfont.svg#webfontbqpzsIdg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+
+body.home {
+	background:url(../images/background-home.jpg) no-repeat top center;	
+	height:1540px;
+}
+
+body.search {
+	background:url(../images/background.jpg) no-repeat top center;	
+	height:1540px;
+}
+
+.container {
+	width:1025px;
+}
+
+/* Navigation  */
+
+
+
+.navbar .container { 
+	margin-top:10px; 
+}
+
+.navbar-default {
+	background:none;
+	border:none;
+	box-shadow:none;
+	margin-top:97px;
+}
+
+.home .navbar-default {
+	box-shadow:none;
+	margin:107px auto 0;
+	width:960px;		
+}
+
+.home .navbar-collapse {
+	padding-left:140px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	padding:5px 12px;
+    color: #333333;  
+    font-family: SkanskaSansProRegular,sans-serif;
+    font-size: 1.125em;
+	outline:none;
+}
+
+.navbar-nav li.selected a {
+    background-color: #F0F0F0;
+    border: 1px solid #DCDCDC;
+    -webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+    margin: 0;
+	padding:5px 12px;	
+}
+
+.navbar-default .navbar-nav > li.selected > a:hover, .navbar-default .navbar-nav > li.selected > a:focus {
+    background-color: #F0F0F0;	
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color:#0078C9;	
+}

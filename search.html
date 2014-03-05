@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width; initial-scale=1.0"/>
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="favicon.ico">
+
+<title>Skanska</title>
+
+<!-- Custom styles -->
+<link rel="stylesheet" type="text/css" href="css/style.css" >
+<link rel="stylesheet" type="text/css" href="css/ion.tabs.css" >
+<link rel="stylesheet" type="text/css" href="css/ion.tabs.skinBordered.css" >
+<link rel="stylesheet" type="text/css" href="css/jquery.multiselect.css" />
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+
+<script src="js/modernizr.custom.js"></script>
+
+<!-- jQuery Library -->
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- Custom Javascript -->
+<script src="js/custom.js"></script>
+
+<!-- jQuery Tabs  -->
+<script src="js/ion.tabs.js"></script>
+
+<!-- jQuery Multiselect -->
+<!--<link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet">-->
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="js/jquery.multiselect.js"></script>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+    	<header>
+         	<div class="search-mobile"></div>
+        	<div class="logo">
+            	<a href="index.html">
+                	<img src="images/logo.png" alt="Skanska">
+                </a>
+            </div>
+            <nav class="main-nav">
+            	<div> 
+                    <img id="topNavLeftArrow" alt="" src="images/topnav-left.png">
+                    <img id="topNavRightArrow" alt="" src="images/topnav-right.png">
+                        <ul>
+                            <li> <a href="index.html">Etusivu</a> </li>
+                            <li class="selected"><a href="search.html">Asuntohaku</a> </li>
+                            <li> <a href="#">Ekotehokas koti</a> </li>
+                            <li> <a href="#">KotiTurva</a> </li>
+                            <li> <a href="#">Ota yhteyttä</a> </li> 
+                        </ul>
+                    
+                </div>
+            </nav>
+        </header><!-- header -->
+        
+        <article>
+        	<div class="container search-wrap">
+            	<div class="filter-wrap">
+                
+                	<div class="search"><input id="filter" type="search-project" name="search" placeholder="Tarkenna alue tai kohde"></div>                  
+                	<div class="municipality">
+                    	<div id="uniform-theme" class="selector">
+                            <select title="Basic example" multiple=name="municipality" size="5">
+                                <option value="-1">Kaikki kunnat</option>
+                                <option value="mR4kSL4I">Espoo</option>
+                                <option value="VJFcnzUq">Helsinki</option>
+                                <option value="DMVz1dil">Inari</option>
+                                <option value="EqGOsBD4">Joensuu</option>
+                                <option value="Nsd5SGF5">Jyväskylä</option>
+                                <option value="i1aZCge0">Järvenpää</option>
+                                <option value="7ks2153k">Kangasala</option>
+                                <option value="W7pCKESD">Kauniainen</option>
+                                <option value="EL22bA0H">Kerava</option>
+                                <option value="KJNTvmqZ">Kirkkonummi</option>
+                                <option value="GIzDVDBQ">Kokkola</option>
+                                <option value="2tpIvTXn">Kolari</option>
+                                <option value="qapSJREK">Kuopio</option>
+                                <option value="vk0cDXMR">Lahti</option>
+                                <option value="nGcJZ6Xm">Lappeenranta</option>
+                                <option value="whrjk4IT">Lapua</option>
+                                <option value="7skP6TVs">Lempäälä</option>
+                                <option value="j96ofFpM">Mikkeli</option>
+                                <option value="OhMCUfLc">Naantali</option>
+                                <option value="JQEjjOzk">Oulu</option>
+                                <option value="R9BFEhwS">Pori</option>
+                                <option value="HmkBtQkn">Raisio</option>
+                                <option value="Rob3l4xv">Rovaniemi</option>
+                                <option value="F8whHOKx">Savonlinna</option>
+                                <option value="3mV7s6Rj">Sipoo</option>
+                                <option value="pfKiNJNz">Tampere</option>
+                                <option value="6CDTmhg2">Turku</option>
+                                <option value="mwwqme64">Vaasa</option>
+                                <option value="OBO6KJAg">Vantaa</option>
+                                
+                       		</select>
+
+                        </div>
+                    </div>    
+                                   
+                	<div class="object-type">                    
+                        <div id="uniform-theme" class="selector" style="width: 92px;">
+                            <select title="Basic example" multiple="multiple" name="object-type" size="5">                          
+                                <option value="">Kerrostalo</option>
+                                <option value="">Rivitalo</option>
+                                <option value="">Paritalo</option>
+                                <option value="">Tontti</option>
+                                <option value="">Autopaikka</option>
+                                <option value="">Erillistalo/Omakotitalo</option>
+                                <option value="">Vapaa-ajan asunto</option>
+                                <option value="">Muut</option> 
+                            </select>
+                  	  </div>
+                    </div>
+                    
+                	<div class="expand-wrap">
+                    	<div class="title"><span class="button">Lisää hakuehtoja</span></div>                        
+                    </div>
+                                       
+                </div><!-- search-wrap -->
+            </div><!-- container -->        	        	
+        	
+            <div class="container expand-filter-wrap"> 
+            	<img src="images/price-square-filter-responsive.jpg" class="expand-filter-wrap-responsive" width="100%">
+            	<div class="expand-filter"></div>        
+            </div>
+   
+        	<div class="container history-wrap">            	
+                <div class="description">
+                	Olet hakenut: 
+                </div><!-- description -->
+                <div class="result">
+                	Helsinki, Uusimaa, Kerrostalo, 271 366 - 467 327 €, 2 huonetta, 61-107 m2
+                </div><!-- result -->                
+                <div class="close">
+                	
+                </div><!-- close -->                
+			</div><!-- container history-wrap -->
+        
+        	<div class="container map-wrap">
+            	<div class="map"></div>
+                
+            </div><!-- container map -->
+            
+        	<div class="container grid-wrap">
+            	  
+                  <div class="show-search">
+                        <div class="title"> Näytä hakutulos </div>
+                    </div>
+                     
+                 <div class="show-map">Näytä kartalla</div> 
+                 <button id="trigger-overlay" type="button" class="show-map-mobile">Näytä kartalla</button>
+                                    
+            	 <div class="ionTabs" id="tabs_1" data-name="Tabs_Group_name">
+                    <ul class="ionTabs__head">
+                        <li class="ionTabs__tab" data-target="Tab_1_name"><strong>Kohteet</strong> (<span id="numProj">8</span>)</li>
+                        <li class="ionTabs__tab" data-target="Tab_2_name"><strong>Asunnot</strong> (149)</li>
+                    </ul>
+                    
+                    <div class="grid-filter">
+                    	<div class="grid-filter-wrap">
+                            <div class="show-as">
+                                <div class="title">Näytä:
+                                    <span class="active">Kuvat</span>
+                                    <span>Lista</span>
+                                </div>                                                       
+                            </div><!-- show-as -->
+                            <div class="sort">
+                                <div class="title">Lajittele:
+                                    <span class="active">Suosituin</span>
+                                    <span>Viimeisin</span>
+                                    <span>Hinta</span>                                
+                                </div>
+                            </div><!-- show-as -->
+                         </div>   
+                    </div><!-- grid-filter -->
+                    
+                    <div class="ionTabs__body">
+                        <div class="ionTabs__item project-list" data-name="Tab_1_name">
+                            <div class="no-result">
+                            	Ei hakutuloksia annetuilla hakuehdoilla
+                                <div class="reset-button">Tyhjennä hakuehdot</div>
+                            </div>
+                            <ul>
+                            <li class="item">
+                                <div class="images one">
+                                	<a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Esmeralda/">
+                                	     <img src="images/project-image-mobile.jpg" alt="" class="project-image-mobile" width="100%">	
+                                    </a>
+                                </div><!-- images -->                        	
+                                <div class="description">
+                                    <div class="title"><a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Esmeralda/">Helsinki, Oulunkylä » </a></div>
+                                    <div class="area"><strong>Alue: </strong>Uusimaa</div>
+                                    <div class="phone">271 366 - 467 327 €</div>
+                                    <div class="rooms">2-4 huonetta, 61-107 m2</div>
+                                </div><!-- description --> 
+                            </li><!-- item --> 
+                            <li class="item">
+                                <div class="images two">
+                                	<a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Tirlittan/">
+	                                    <img src="images/project-image2-mobile.jpg" alt="" class="project-image-mobile" width="100%">	    	
+                                    </a>
+                                </div><!-- images -->                        	
+                                <div class="description">
+                                    <div class="title"><a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Tirlittan/">Helsinki, Herttoniemi »</a></div>
+                                    <div class="area"><strong>Alue: </strong> Uusimaa</div>
+                                    <div class="phone">271 366 - 467 327 €</div>
+                                    <div class="rooms">4-6 huonetta, 91-177 m2</div>
+                                </div><!-- description --> 
+                            </li><!-- item --> 
+                            <li class="item">
+                                <div class="images one">
+                                	<a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Esmeralda/">
+	                                    <img src="images/project-image-mobile.jpg" alt="" class="project-image-mobile" width="100%">
+                                    </a>
+                                </div><!-- images -->                        	
+                                <div class="description">
+                                    <div class="title"><a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Esmeralda/">Helsinki, Oulunkylä »</a></div>
+                                    <div class="area"><strong>Alue: </strong> Uusimaa</div>
+                                    <div class="phone">271 366 - 467 327 €</div>
+                                    <div class="rooms">1-3 huonetta, 41-77 m2</div>
+                                </div><!-- description --> 
+                            </li><!-- item --> 
+                            <li class="item">
+                                <div class="images two">
+                                	<a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Tirlittan/">
+	                                      <img src="images/project-image2-mobile.jpg" alt="" class="project-image-mobile" width="100%">  	
+                                    </a>
+                                </div><!-- images -->                        	
+                                <div class="description">
+                                    <div class="title"><a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Tirlittan/">Helsinki, Herttoniemi »</a></div>
+                                    <div class="area"><strong>Alue: </strong> Uusimaa</div>
+                                    <div class="phone">271 366 - 467 327 €</div>
+                                    <div class="rooms">3-5 huonetta, 81-127 m2</div>
+                                </div><!-- description --> 
+                            </li><!-- item --> 
+                        
+                            <li class="item">
+                                <div class="images two">
+                                	<a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Tirlittan/">
+	                                     <img src="images/project-image2-mobile.jpg" alt="" class="project-image-mobile" width="100%">   	
+                                    </a>
+                                </div><!-- images -->                        	
+                                <div class="description">
+                                    <div class="title"><a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Tirlittan/">Helsinki, Herttoniemi »</a></div>
+                                    <div class="area"><strong>Alue: </strong> Uusimaa</div>
+                                    <div class="phone">271 366 - 467 327 €</div>
+                                    <div class="rooms">2-4 huonetta, 61-107 m2</div>
+                                </div><!-- description --> 
+                            </li><!-- item --> 
+                            <li class="item">
+                                <div class="images two">
+    	                            <a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Tirlittan/">
+	                                       <img src="images/project-image2-mobile.jpg" alt="" class="project-image-mobile" width="100%"> 	
+                                    </a>
+                                </div><!-- images -->                        	
+                                <div class="description">
+                                    <div class="title"><a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Tirlittan/">Helsinki, Herttoniemi »</a></div>
+                                    <div class="area"><strong>Alue: </strong> Uusimaa</div>
+                                    <div class="phone">271 366 - 467 327 €</div>
+                                    <div class="rooms">4-6 huonetta, 91-177 m2</div>
+                                </div><!-- description --> 
+                            </li><!-- item --> 
+                            <li class="item">
+                                <div class="images two">
+                                	<a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Tirlittan/">
+	                                     <img src="images/project-image2-mobile.jpg" alt="" class="project-image-mobile" width="100%">   	
+                                    </a>                                       
+                                </div><!-- images -->                        	
+                                <div class="description">
+                                    <div class="title"><a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Tirlittan/">Helsinki, Herttoniemi »</a></div>
+                                    <div class="area"><strong>Alue: </strong> Uusimaa</div>
+                                    <div class="phone">271 366 - 467 327 €</div>
+                                    <div class="rooms">1-3 huonetta, 41-77 m2</div>
+                                </div><!-- description --> 
+                            </li><!-- item --> 
+                            <li class="item">
+                                <div class="images two">
+                                	<a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Tirlittan/">
+	                                     <img src="images/project-image2-mobile.jpg" alt="" class="project-image-mobile" width="100%">   	
+                                    </a>                                        
+                                </div><!-- images -->                        	
+                                <div class="description">
+                                    <div class="title"><a href="http://kodit.skanska.fi/Kohteet-ja-asunnot/Helsingin-Tirlittan/">Helsinki, Herttoniemi »</a></div>
+                                    <div class="area"><strong>Alue: </strong> Uusimaa</div>
+                                    <div class="phone">271 366 - 467 327 €</div>
+                                    <div class="rooms">3-5 huonetta, 81-127 m2</div>
+                                </div><!-- description --> 
+                            </li><!-- item --> 
+                        </ul>
+                        </div><!-- project-list -->
+                        <div class="ionTabs__item" data-name="Tab_2_name">
+                        		<img src="images/apartman-list-mobile.jpg" alt="" class="apartment-list" width="100%">
+                        		<div class="apartman-list"></div>
+                                <div class="status-list"><img src="images/status-list-mobile.jpg" alt="" class="status-list-mobile"></div>
+                        </div>                
+                        <div class="ionTabs__preloader"></div>
+                    </div>
+                </div>
+                
+                    <div class="overlay overlay-door">
+                        <div class="map-mobile"></div>
+                        <button type="button" class="overlay-close">Close Piilota kartta</button>                        
+                    </div>
+                
+                <div class="more-projects">
+                    <div class="load">
+                        Näytä lisää kohteita (75)
+                    </div>
+                </div><!-- more-projects -->
+                
+            </div><!-- container --> 
+                   	        	
+        </article><!-- article -->
+        
+    </div><!-- wrapper -->
+    
+<!-- Popup in mobile -->
+<script src="js/classie.js"></script>
+<script src="js/demo1.js"></script>
+
+</body>
+</html>
